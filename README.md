@@ -21,7 +21,7 @@ Each packet received from the client by the server is always answered with a bin
 
 ```
 
-∼/Babel> ./r-type_server –h
+∼/Rtype> ./r-type_server –h
 
 USAGE: ./r-type_server [Ip] [Port]
 This command will execute the server side of the R-Type project.
@@ -45,9 +45,9 @@ It is made to connect to the providen server using TCP/IP and UDP connection pro
 
 ```
 
-∼/Babel> ./r-type_client –h
+∼/Rtype> ./r-type_client –h
 
-USAGE: ./r-type_client IP Server Port_Server
+USAGE: ./r-type_client IP_Server Port_Server
 This command will execute the client side of the R-Type project.
 ```
 
@@ -57,11 +57,9 @@ i.e.
 
 ## How to compile Rtype?
 
-  
-
 1. Switch to repository's root
 
-2. Compile every binaries at once using the command `mkdir build && cd build && conan install .. && cmake .. -G “Unix Makefiles” && cmake –build .`
+2. Compile every binaries at once using the command `mkdir build && cd build && conan install .. && cmake .. -G "Unix Makefiles" && cmake –build .`
 
 3. Start the server using the above written help message
 
